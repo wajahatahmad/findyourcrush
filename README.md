@@ -50,6 +50,16 @@ Along with Location Information we also get **Device Information** without any p
 
 **Note** : On iPhone due to some reason location accuracy is approximately 65 meters.
 
+## Templates
+
+Available Templates : 
+
+* NearYou
+* Google Drive 
+* WhatsApp 
+* Telegram
+
+
 ## Tested On :
 
 * Kali Linux 2019.2
@@ -96,12 +106,31 @@ python3 findyourcrush.py -h
 usage: findyourcrush.py [-h] [-s SUBDOMAIN]
 
 optional arguments:
-  -h, --help                              show this help message and exit
-  -s SUBDOMAIN, --subdomain Subdomain 	Provide Subdomain for Serveo URL ( Optional )
+  -h, --help            show this help message and exit
+  -k KML, --kml         Provide KML Filename ( Optional )
+  -p PORT, --port       Port for Web Server [ Default : 8080 ]
+  -t TUNNEL, --tunnel   Specify Tunnel Mode [ Available : manual ]
 
-# Example
+##################
+# Usage Examples #
+##################
 
-python3 findyourcrush.py --subdomain google
+# Step 1 : In first terminal
+$ python3 findyourcrush.py -t manual
+
+# Step 2 : In second terminal start a tunnel service such as ngrok
+$ ./ngrok http 8080
+
+###########
+# Options #
+###########
+
+# Ouput KML File for Google Earth
+$ python3 findyourcrush.py -t manual -k <filename>
+
+# Use Custom Port
+$ python3 findyourcrush.py -t manual -p 1337
+$ ./ngrok http 1337
 ```
 
 ## Known Problems
