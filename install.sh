@@ -12,7 +12,7 @@ echo '    Requests'
 pip3 install requests &>> install.log
 echo
 echo '[!] Setting Permissions...'
-chmod 777 template/findyourcrush/php/info.txt
-chmod 777 template/findyourcrush/php/result.txt
+chmod 777 template/nearyou/php/info.txt
+chmod 777 template/nearyou/php/result.txt
 echo
 echo '[!] Installed.'
