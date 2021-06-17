@@ -5,18 +5,18 @@ R = '\033[31m' # red
 G = '\033[32m' # green
 C = '\033[36m' # cyan
 W = '\033[0m'  # white
-Yellow="\[\033[0;33m\]"       # Yellow
-Blue="\[\033[0;34m\]"         # Blue
-Purple="\[\033[0;35m\]"       # Purple
-BB="\[\033[1;30m\]"       # Black
-BRed="\[\033[1;31m\]"         # Red
-BGreen="\[\033[1;32m\]"       # Green
-BYellow="\[\033[1;33m\]"      # Yellow
-BBlue="\[\033[1;34m\]"        # Blue
-BPurple="\[\033[1;35m\]"      # Purple
-BCyan="\[\033[1;36m\]"        # Cyan
-BWhite="\[\033[1;37m\]"       # White
-BIGreen="\[\033[1;92m\]"
+Yellow="\033[0;33m\]"       # Yellow
+Blue="\033[0;34m\]"         # Blue
+Purple="\033[0;35m\]"       # Purple
+BB="\033[1;30m\]"       # Black
+BRed="\033[1;31m\]"         # Red
+BGreen="\033[1;32m\]"       # Green
+BYellow="\033[1;33m\]"      # Yellow
+BBlue="\033[1;34m\]"        # Blue
+BPurple="\033[1;35m\]"      # Purple
+BCyan="\033[1;36m\]"        # Cyan
+BWhite="\033[1;37m\]"       # White
+BIGreen="\033[1;92m\]"
 
 from shutil import which
 
@@ -77,7 +77,7 @@ def banner():
                      |___/
   ''' + G)
 	print('\n' + G + '[>]' + C + ' Created By : ' + BIGreen + 'Wajahat Ahmad ' + G + ' | github.com/wajahatahmad')
-	print(G + '[>]' + C + ' Version    : ' + W + version + '\n')
+	print(G + '[>]' + C + ' Version    : ' + R + version + '\n')
 
 def ver_check():
 	print(G + '[+]' + C + ' Checking for Updates.....', end='')
