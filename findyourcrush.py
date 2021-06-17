@@ -5,6 +5,9 @@ R = '\033[31m' # red
 G = '\033[32m' # green
 C = '\033[36m' # cyan
 W = '\033[0m'  # white
+Yellow="\[\033[0;33m\]"       # Yellow
+Blue="\[\033[0;34m\]"         # Blue
+Purple="\[\033[0;35m\]"       # Purple
 BB="\[\033[1;30m\]"       # Black
 BRed="\[\033[1;31m\]"         # Red
 BGreen="\[\033[1;32m\]"       # Green
@@ -13,6 +16,7 @@ BBlue="\[\033[1;34m\]"        # Blue
 BPurple="\[\033[1;35m\]"      # Purple
 BCyan="\[\033[1;36m\]"        # Cyan
 BWhite="\[\033[1;37m\]"       # White
+BIGreen="\[\033[1;92m\]"
 
 from shutil import which
 
@@ -63,7 +67,7 @@ def banner():
 
 def banner():
 	os.system('clear')
-	print (BGreen +
+	print (BIGreen +
 	r'''
   __ _           _                              
  / _(_)_ __   __| |  _   _  ___  _   _ _ __    ___ _ _ __ _   _ _| |_
@@ -72,7 +76,7 @@ def banner():
 |_| |_|_| |_|\__,_|  \_,| |\___/ \__,_|_|    \___||_|   \__,_|___/_| |_|
                      |___/
   ''' + G)
-	print('\n' + G + '[>]' + C + ' Created By : ' + R + 'Wajahat Ahmad')
+	print('\n' + G + '[>]' + C + ' Created By : ' + BIGreen + 'Wajahat Ahmad ' + G + ' | github.com/wajahatahmad')
 	print(G + '[>]' + C + ' Version    : ' + W + version + '\n')
 
 def ver_check():
@@ -86,7 +90,7 @@ def ver_check():
 			github_ver = github_ver.strip()
 
 			if version == github_ver:
-				print(C + '[' + G + ' Up-To-Date ' + C +']' + '\n')
+				print(C + '[' + Yellow + ' Up-To-Date ' + C +']' + '\n')
 			else:
 				print(C + '[' + G + ' Available : {} '.format(github_ver) + C + ']' + '\n')
 		else:
