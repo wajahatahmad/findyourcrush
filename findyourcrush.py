@@ -51,7 +51,7 @@ version = '1.2.7'
 
 def banner():
 	os.system('clear')
-	print (R +
+	print (R + G +
 	r'''
   __ _           _                              
  / _(_)_ __   __| |  _   _  ___  _   _ _ __    ___ _ _ __ _   _ _| |_
@@ -60,7 +60,7 @@ def banner():
 |_| |_|_| |_|\__,_|  \_,| |\___/ \__,_|_|    \___||_|   \__,_|___/_| |_|
                      |___/
   ''' + G)
-	print('\n' + G + '[>]' + C + ' Created By : ' + W + 'Wajahat Ahmad')
+	print('\n' + G + '[>]' + C + ' Created By : ' + R + 'Wajahat Ahmad')
 	print(G + '[>]' + C + ' Version    : ' + W + version + '\n')
 
 def ver_check():
