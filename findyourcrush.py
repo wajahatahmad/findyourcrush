@@ -51,7 +51,7 @@ version = '1.2.7'
 
 def banner():
 	os.system('clear')
-	print (G +
+	print (R +
 	r'''
   __ _           _                              
  / _(_)_ __   __| |  _   _  ___  _   _ _ __    ___ _ _ __ _   _ _| |_
