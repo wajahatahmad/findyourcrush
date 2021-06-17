@@ -76,7 +76,7 @@ def banner():
 |_| |_|_| |_|\__,_|  \_,| |\___/ \__,_|_|    \___||_|   \__,_|___/_| |_|
                      |___/
   ''' + G)
-	print('\n' + G + '[>]' + C + ' Created By : ' + BIGreen + 'Wajahat Ahmad ' + G + ' | github.com/wajahatahmad')
+	print('\n' + G + '[>]' + C + ' Created By : ' + BBlue + 'Wajahat Ahmad' + Blue + ' | github.com/wajahatahmad')
 	print(G + '[>]' + C + ' Version    : ' + R + version + '\n')
 
 def ver_check():
